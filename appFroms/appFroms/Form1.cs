@@ -57,30 +57,37 @@ namespace appFroms
                 //    MessageBox.Show("Incorrecto session");
                 //}
 
-                string user = txt_user.Text;
-                string pass = txt_pass.Text;
+                //string user = txt_user.Text;
+                //string pass = txt_pass.Text;
 
-                switch (user)
+                //switch (user)
+                //{
+                //    case "Eduardo":
+                //        MessageBox.Show("Bienvenido Eduardo");
+                //        switch (pass)
+                //        {
+                //            case "1234":
+                //                MessageBox.Show("exit");
+                //                break;
+                //            default:
+                //                MessageBox.Show("error");
+                //                break;
+                //        }
+                //        break;
+                //    case "David":
+                //        MessageBox.Show("Bienvenido David");
+                //        break;
+                //    default:
+                //        MessageBox.Show("No existe");
+                //        break;
+                //}
+
+                int var = 0;
+                for (int i = 0; i < 10; i++)
                 {
-                    case "Eduardo":
-                        MessageBox.Show("Bienvenido Eduardo");
-                        switch (pass)
-                        {
-                            case "1234":
-                                MessageBox.Show("exit");
-                                break;
-                            default:
-                                MessageBox.Show("error");
-                                break;
-                        }
-                        break;
-                    case "David":
-                        MessageBox.Show("Bienvenido David");
-                        break;
-                    default:
-                        MessageBox.Show("No existe");
-                        break;
+                    var = i;
                 }
+                MessageBox.Show(var.ToString());
             }
             catch (Exception ex)
             {
