@@ -17,10 +17,7 @@ namespace appFroms
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
 
-        }
 
         private void btn_ok_Click(object sender, EventArgs e)
         {
@@ -36,11 +33,18 @@ namespace appFroms
                 //string bienvenida = " Bienvenido";
                 //string texto = "hola " + txt_nombre.Text + bienvenida;
                 //lbl_texto.Text = texto;
+                string user = txt_user.Text;
+                string pass = txt_pass.Text;
 
 
-
-
-
+                if (user != "Eduardo" || Convert.ToInt64(pass) + 50 == 100)
+                {
+                    MessageBox.Show("Bienvenido ");
+                }
+                else
+                {
+                    MessageBox.Show("Incorrecto session");
+                }
             }
             catch (Exception ex)
             {

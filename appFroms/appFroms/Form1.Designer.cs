@@ -30,8 +30,10 @@
         {
             this.btn_ok = new System.Windows.Forms.Button();
             this.btn_close = new System.Windows.Forms.Button();
-            this.lbl_texto = new System.Windows.Forms.Label();
-            this.txt_nombre = new System.Windows.Forms.TextBox();
+            this.lbl_usuario = new System.Windows.Forms.Label();
+            this.txt_user = new System.Windows.Forms.TextBox();
+            this.lbl_contrasena = new System.Windows.Forms.Label();
+            this.txt_pass = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btn_ok
@@ -54,30 +56,47 @@
             this.btn_close.UseVisualStyleBackColor = true;
             this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
             // 
-            // lbl_texto
+            // lbl_usuario
             // 
-            this.lbl_texto.AutoSize = true;
-            this.lbl_texto.Location = new System.Drawing.Point(38, 26);
-            this.lbl_texto.Name = "lbl_texto";
-            this.lbl_texto.Size = new System.Drawing.Size(60, 13);
-            this.lbl_texto.TabIndex = 2;
-            this.lbl_texto.Text = "Bienvenido";
-            this.lbl_texto.Click += new System.EventHandler(this.label1_Click);
+            this.lbl_usuario.AutoSize = true;
+            this.lbl_usuario.Location = new System.Drawing.Point(38, 26);
+            this.lbl_usuario.Name = "lbl_usuario";
+            this.lbl_usuario.Size = new System.Drawing.Size(43, 13);
+            this.lbl_usuario.TabIndex = 2;
+            this.lbl_usuario.Text = "Usuario";
             // 
-            // txt_nombre
+            // txt_user
             // 
-            this.txt_nombre.Location = new System.Drawing.Point(125, 23);
-            this.txt_nombre.Name = "txt_nombre";
-            this.txt_nombre.Size = new System.Drawing.Size(146, 20);
-            this.txt_nombre.TabIndex = 3;
+            this.txt_user.Location = new System.Drawing.Point(125, 23);
+            this.txt_user.Name = "txt_user";
+            this.txt_user.Size = new System.Drawing.Size(146, 20);
+            this.txt_user.TabIndex = 3;
+            // 
+            // lbl_contrasena
+            // 
+            this.lbl_contrasena.AutoSize = true;
+            this.lbl_contrasena.Location = new System.Drawing.Point(38, 63);
+            this.lbl_contrasena.Name = "lbl_contrasena";
+            this.lbl_contrasena.Size = new System.Drawing.Size(61, 13);
+            this.lbl_contrasena.TabIndex = 4;
+            this.lbl_contrasena.Text = "Contraseña";
+            // 
+            // txt_pass
+            // 
+            this.txt_pass.Location = new System.Drawing.Point(125, 60);
+            this.txt_pass.Name = "txt_pass";
+            this.txt_pass.Size = new System.Drawing.Size(146, 20);
+            this.txt_pass.TabIndex = 5;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(428, 203);
-            this.Controls.Add(this.txt_nombre);
-            this.Controls.Add(this.lbl_texto);
+            this.ClientSize = new System.Drawing.Size(352, 201);
+            this.Controls.Add(this.txt_pass);
+            this.Controls.Add(this.lbl_contrasena);
+            this.Controls.Add(this.txt_user);
+            this.Controls.Add(this.lbl_usuario);
             this.Controls.Add(this.btn_close);
             this.Controls.Add(this.btn_ok);
             this.Name = "Form1";
@@ -91,8 +110,10 @@
 
         private System.Windows.Forms.Button btn_ok;
         private System.Windows.Forms.Button btn_close;
-        private System.Windows.Forms.Label lbl_texto;
-        private System.Windows.Forms.TextBox txt_nombre;
+        private System.Windows.Forms.Label lbl_usuario;
+        private System.Windows.Forms.TextBox txt_user;
+        private System.Windows.Forms.Label lbl_contrasena;
+        private System.Windows.Forms.TextBox txt_pass;
     }
 }
 
