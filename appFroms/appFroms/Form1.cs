@@ -33,31 +33,46 @@ namespace appFroms
                 //string bienvenida = " Bienvenido";
                 //string texto = "hola " + txt_nombre.Text + bienvenida;
                 //lbl_texto.Text = texto;
+
+                //if (user == "Eduardo")
+                //{
+                //    MessageBox.Show("Bienvenido ");
+                //    if (Convert.ToInt64(pass) < 100)
+                //    {
+                //        MessageBox.Show("ES < 100");
+                //    }
+                //    else if(Convert.ToInt64(pass) > 100)
+                //    {
+                //        MessageBox.Show("ES > 100");
+                //        //MessageBox.Show("no llega");
+                //    }
+                //    else
+                //    {
+                //        MessageBox.Show("ES 100");
+                //        //MessageBox.Show("no llega");
+                //    }
+                //}
+                //else
+                //{
+                //    MessageBox.Show("Incorrecto session");
+                //}
+
                 string user = txt_user.Text;
                 string pass = txt_pass.Text;
 
+                switch (user)
+                {
+                    case "Eduardo":
+                        MessageBox.Show("Bienvenido Eduardo");
+                        break;
+                    
+                    case "David":
+                        MessageBox.Show("Bienvenido David");
+                        break;
 
-                if (user == "Eduardo")
-                {
-                    MessageBox.Show("Bienvenido ");
-                    if (Convert.ToInt64(pass) < 100)
-                    {
-                        MessageBox.Show("ES < 100");
-                    }
-                    else if(Convert.ToInt64(pass) > 100)
-                    {
-                        MessageBox.Show("ES > 100");
-                        //MessageBox.Show("no llega");
-                    }
-                    else
-                    {
-                        MessageBox.Show("ES 100");
-                        //MessageBox.Show("no llega");
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Incorrecto session");
+                    default:
+                        MessageBox.Show("No existe");
+                        break;
                 }
             }
             catch (Exception ex)
