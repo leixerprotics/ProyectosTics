@@ -40,13 +40,19 @@ namespace appFroms
                 if (user == "Eduardo")
                 {
                     MessageBox.Show("Bienvenido ");
-                    if (Convert.ToInt64(pass) + 50 == 100)
+                    if (Convert.ToInt64(pass) < 100)
                     {
-                        MessageBox.Show("llega a 100");
+                        MessageBox.Show("ES < 100");
+                    }
+                    else if(Convert.ToInt64(pass) > 100)
+                    {
+                        MessageBox.Show("ES > 100");
+                        //MessageBox.Show("no llega");
                     }
                     else
                     {
-                        MessageBox.Show("no llega");
+                        MessageBox.Show("ES 100");
+                        //MessageBox.Show("no llega");
                     }
                 }
                 else
