@@ -64,12 +64,19 @@ namespace appFroms
                 {
                     case "Eduardo":
                         MessageBox.Show("Bienvenido Eduardo");
+                        switch (pass)
+                        {
+                            case "1234":
+                                MessageBox.Show("exit");
+                                break;
+                            default:
+                                MessageBox.Show("error");
+                                break;
+                        }
                         break;
-                    
                     case "David":
                         MessageBox.Show("Bienvenido David");
                         break;
-
                     default:
                         MessageBox.Show("No existe");
                         break;
