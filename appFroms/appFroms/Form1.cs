@@ -82,10 +82,15 @@ namespace appFroms
                 //        break;
                 //}
 
-                int var = 0;
+                string var = "";
                 for (int i = 0; i < 10; i++)
                 {
-                    var = i;
+                    var += i.ToString();
+
+                    if (i == 5)
+                    {
+                        break;
+                    }
                 }
                 MessageBox.Show(var.ToString());
             }
