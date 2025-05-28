@@ -37,9 +37,17 @@ namespace appFroms
                 string pass = txt_pass.Text;
 
 
-                if (user != "Eduardo" || Convert.ToInt64(pass) + 50 == 100)
+                if (user == "Eduardo")
                 {
                     MessageBox.Show("Bienvenido ");
+                    if (Convert.ToInt64(pass) + 50 == 100)
+                    {
+                        MessageBox.Show("llega a 100");
+                    }
+                    else
+                    {
+                        MessageBox.Show("no llega");
+                    }
                 }
                 else
                 {
