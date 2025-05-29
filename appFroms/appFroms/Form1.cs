@@ -99,17 +99,18 @@ namespace appFroms
                 string var = "";
                 int x = 0;
 
-                while (x < 10)
+                //while (x < 10)
+                //{
+                //    var += x.ToString() + "-";
+                //    x++;
+                //}
+                do
                 {
-
                     var += x.ToString() + "-";
                     x++;
-                }
-
+                } while (x > 10);
 
                 MessageBox.Show(var);
-
-
 
 
             }
