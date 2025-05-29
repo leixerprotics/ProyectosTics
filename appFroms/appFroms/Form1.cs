@@ -82,19 +82,36 @@ namespace appFroms
                 //        break;
                 //}
 
+                //string var = "";
+                //for (int i = 0; i < 10; i++)
+                //{
+                //    var += i.ToString();
+
+                //    if (i == 5)
+                //    {
+                //        break;
+                //    }
+
+                //    var += " - ";
+                //}
+                //MessageBox.Show(var.ToString());
+
                 string var = "";
-                for (int i = 0; i < 10; i++)
+                int x = 0;
+
+                while (x < 10)
                 {
-                    var += i.ToString();
 
-                    if (i == 5)
-                    {
-                        break;
-                    }
-
-                    var += " - ";
+                    var += x.ToString() + "-";
+                    x++;
                 }
-                MessageBox.Show(var.ToString());
+
+
+                MessageBox.Show(var);
+
+
+
+
             }
             catch (Exception ex)
             {
