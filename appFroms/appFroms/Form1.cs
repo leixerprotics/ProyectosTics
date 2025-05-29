@@ -91,6 +91,8 @@ namespace appFroms
                     {
                         break;
                     }
+
+                    var += " - ";
                 }
                 MessageBox.Show(var.ToString());
             }
