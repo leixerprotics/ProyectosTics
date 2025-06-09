@@ -96,23 +96,31 @@ namespace appFroms
                 //}
                 //MessageBox.Show(var.ToString());
 
-                string var = "";
-                int x = 0;
+                //string var = "";
+                //int x = 0;
 
-                //while (x < 10)
+                ////while (x < 10)
+                ////{
+                ////    var += x.ToString() + "-";
+                ////    x++;
+                ////}
+                //do
                 //{
                 //    var += x.ToString() + "-";
                 //    x++;
-                //}
-                do
-                {
-                    var += x.ToString() + "-";
-                    x++;
-                } while (x > 10);
+                //} while (x > 10);
 
-                MessageBox.Show(var);
+                //MessageBox.Show(var);
 
 
+
+                //VECTORES
+                int num = 0;
+                int[] vector = new int[5];
+                vector[0] = 10;
+                vector[1] = 10;
+                vector[2] = 10;
+                MessageBox.Show(vector[1].ToString());
             }
             catch (Exception ex)
             {
