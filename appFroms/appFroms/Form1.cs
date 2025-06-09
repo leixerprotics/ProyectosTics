@@ -120,7 +120,31 @@ namespace appFroms
                 vector[0] = 10;
                 vector[1] = 10;
                 vector[2] = 10;
-                MessageBox.Show(vector[1].ToString());
+                MessageBox.Show(vector.Length.ToString());
+
+
+                //for (int i = 0; i < vector.Length; i++)
+                //{
+                //    vector[i] = i;
+                //    MessageBox.Show(vector[i].ToString());
+                //}
+
+                string[] vecstr = new string[10];
+                for (int i = 0; i < vecstr.Length; i++)
+                {
+                    vecstr[i] = "mi posicion es " + i;
+                }
+
+                for (int x = 0; x < vecstr.Length; x++)
+                {
+                    MessageBox.Show(vecstr[x]);
+                }
+
+
+
+
+
+
             }
             catch (Exception ex)
             {
