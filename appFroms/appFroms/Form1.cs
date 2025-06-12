@@ -120,7 +120,7 @@ namespace appFroms
                 vector[0] = 10;
                 vector[1] = 10;
                 vector[2] = 10;
-                MessageBox.Show(vector.Length.ToString());
+                //MessageBox.Show(vector.Length.ToString());
 
 
                 //for (int i = 0; i < vector.Length; i++)
@@ -129,22 +129,56 @@ namespace appFroms
                 //    MessageBox.Show(vector[i].ToString());
                 //}
 
-                string[] vecstr = new string[10];
-                for (int i = 0; i < vecstr.Length; i++)
+                //string[] vecstr = new string[10];
+                //for (int i = 0; i < vecstr.Length; i++)
+                //{
+                //    vecstr[i] = "mi posicion es " + i;
+                //}
+
+                //for (int x = 0; x < vecstr.Length; x++)
+                //{
+                //    MessageBox.Show(vecstr[x]);
+                //}
+
+
+                //matrices
+
+                int[] numVec = new int[5];
+                int[,] numMat = new int[3, 5];
+
+                numMat[0, 0] = 1;
+                numMat[0, 1] = 2;
+                numMat[0, 2] = 3;
+                numMat[0, 3] = 4;
+                numMat[0, 4] = 5;
+
+                for (int a = 0; a < numMat.Length; a++)
                 {
-                    vecstr[i] = "mi posicion es " + i;
+                    //MessageBox.Show(numMat.Length.ToString());
+                    //MessageBox.Show(numMat[0, a].ToString());
                 }
 
-                for (int x = 0; x < vecstr.Length; x++)
+                //matriz ejercicio
+                int[,] matriz = new int[5, 5];
+
+                for (int i = 0; i < matriz.GetLength(0); i++)
                 {
-                    MessageBox.Show(vecstr[x]);
+                    for (int j = 0; j < matriz.GetLength(1); j++)
+                    {
+                        matriz[i, j] = i + j;
+                    }
                 }
 
 
+                //el matriz.GetLength(0) 0 para fila y columna 
 
-
-
-
+                for (int fila = 0; fila < matriz.GetLength(0); fila++)
+                {
+                    for (int col = 0; col < matriz.GetLength(1); col++)
+                    {
+                        MessageBox.Show("Posicion: fila:" + fila + "columna" + col + " matriz: " + matriz[fila, col]);
+                    }
+                }
             }
             catch (Exception ex)
             {
